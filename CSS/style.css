@@ -1,0 +1,84 @@
+/* Обнуление { */
+
+    *{
+        padding: 0;
+    
+        border: 0;
+    }
+    *,*:before,*:after{
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    
+    nav,footer,header,aside{display: block}
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+    }
+    input,textarea{font-family:inherit;}
+    
+    input::-ms-clear{display: none;}
+    button{cursor: pointer}
+    
+    ul li{list-style: none;}
+    img{vertical-align: top;}
+    
+    
+    /* } Обнуление */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-nav .panel-ul{
+    list-style: none;
+      background-color: #1e1e1e;
+}
+
+.panel-nav > .panel-ul > .panel-li {
+    float: left;
+}
+
+.panel-nav .panel-ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.panel-nav .panel-ul .panel-li .panel-a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    width: 125px;
+}
+
+.panel-nav .panel-ul .panel-li .panel-a:hover {
+  background-color: #950740;
+
+}
+
+.panel-nav .panel-ul .panel-ul {
+    display: none;
+    position: absolute;
+}
+
+.panel-nav .panel-ul .panel-li:hover .panel-ul {
+    display: block;
+}
+
+form {
+    width: 500px ;
+}
